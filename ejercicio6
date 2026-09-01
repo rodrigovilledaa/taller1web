@@ -1,0 +1,22 @@
+// --- Ejercicio 6: Clase Producto ---
+class Producto {
+    constructor(nombre, precio, stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+
+    mostrarDetalles() {
+        console.log("Producto: " + this.nombre);
+        console.log("Precio: $" + this.precio);
+        console.log("Stock: " + this.stock + " unidades\n"); // El \n al final es solo para dejar un salto de línea y que se vea ordenado
+    }
+}
+
+console.log("\n--- Probando Clase Producto ---");
+
+let producto1 = new Producto("Mouse", 25, 10);
+producto1.mostrarDetalles();
+
+let producto2 = new Producto("Monitor Gamer", 250, 5);
+producto2.mostrarDetalles();
