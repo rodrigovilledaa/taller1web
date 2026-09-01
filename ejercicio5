@@ -1,0 +1,11 @@
+// --- Ejercicio 5: Generador de Usuario ---
+function generarUsuario(nombreCompleto) {
+    let enMinusculas = nombreCompleto.toLowerCase();
+    let sinEspacios = enMinusculas.replaceAll(" ", "");
+    let usuarioFinal = sinEspacios + "_dev";
+    console.log("Nombre original: " + nombreCompleto);
+    console.log("Usuario generado: " + usuarioFinal);
+}
+generarUsuario("Rodrigo Jose Villeda"); 
+generarUsuario("Ana Maria Garcia");     
+generarUsuario("Juan Perez");           
