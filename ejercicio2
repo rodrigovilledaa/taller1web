@@ -1,0 +1,35 @@
+// --- Ejercicio 2: Clasificación de Notas ---
+
+function clasificarNota(nota) {
+    let resultado = ""; 
+
+    if (nota >= 90 && nota <= 100) {
+        resultado = "Excelente";
+    } 
+    else if (nota >= 80 && nota <= 89) {
+        resultado = "Muy Bueno";
+    } 
+    else if (nota >= 70 && nota <= 79) {
+        resultado = "Bueno";
+    } 
+    else if (nota >= 60 && nota <= 69) {
+        resultado = "Regular";
+    } 
+    else if (nota < 60 && nota >= 0) {
+        resultado = "Reprobado";
+    } 
+    else {
+        // Por si alguien pone un número negativo o mayor a 100 por error
+        resultado = "Nota inválida. Por favor ingresa un número entre 0 y 100."; 
+    }
+
+    // Mostramos el resultado en la consola
+    console.log("Para la nota " + nota + ", el resultado es: " + resultado);
+}
+
+// Pruebas (¡Recuerda que van afuera de la función!)
+clasificarNota(95); 
+clasificarNota(82); 
+clasificarNota(75); 
+clasificarNota(61); 
+clasificarNota(45); 
