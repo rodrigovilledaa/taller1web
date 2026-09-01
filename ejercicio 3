@@ -1,0 +1,8 @@
+// --- Ejercicio 3: Conversor de Temperatura ---
+function convertirTemperatura(celsius) {
+    let fahrenheit = (celsius * 9 / 5) + 32;
+    console.log(celsius + "°C = " + fahrenheit + "°F");
+}
+convertirTemperatura(25); 
+convertirTemperatura(0);  
+convertirTemperatura(30); 
